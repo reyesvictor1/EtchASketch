@@ -1,0 +1,81 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+}
+
+* {
+    margin: 0;
+}
+
+#flex-container {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#flex-container > div {
+    margin: 5px;
+    padding: 0px;
+}
+
+#title {
+    flex: 0;
+    font-family: "Shantell Sans", sans-serif;
+    font-size: 30px;
+}
+
+#status-div {
+    flex: 1;
+    max-height: 30px;
+    font-family: fantasy, sans-serif;
+}
+
+#board {
+    flex: auto;
+    display: grid;
+    border: 10px solid black;
+}
+
+#board:hover, button:hover, input:hover {
+    cursor: pointer;
+}
+
+#buttons {
+    flex: 1;
+    max-height: 30px;
+    font-family: fantasy, sans-serif;
+    display: flex;
+}
+
+.btn {
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    flex: auto;
+    width: 80px;
+    font-weight: 700;
+}
+
+#resolution {
+    flex: 1;
+    max-height: 30px;
+    font-family: fantasy, sans-serif;
+}
+
+#btn-black {
+    color: white;
+    background: black;
+}
+
+#btn-white {
+    color: black;
+    background: white;
+}
+
+#btn-random {
+    color: black;
+    background: linear-gradient(to right, #ff0000, #00ff00);
+}

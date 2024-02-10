@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch A Sketch</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,600;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div id="flex-container">
+        <div id="title"><h1>Etch A Sketch</h1></div>
+        <div id="status-div">
+            <span>DRAWING:</span>
+            <span id="drawing-status"></span>
+        </div>
+        <div id="board"></div>
+        <div id="buttons">
+            <button class="btn" id="btn-black">Black</button>
+            <button class="btn" id="btn-erasor">Erasor</button>
+            <button class="btn" id="btn-random">Random</button>
+            <button class="btn" id="btn-reset">Reset</button>
+        </div>
+        <div id="resolution">
+            <label for="inp">Resolution</label>
+            <input type="range" id="inp" min="2" max="100" value="16" >
+        </div>
+    </div>
 </body>
 </html>
